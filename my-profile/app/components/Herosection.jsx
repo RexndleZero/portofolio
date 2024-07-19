@@ -5,16 +5,21 @@ const Herosection = () => {
   return (
     <section>
       <div className="grid grid-cols-1 sm:grid-cols-12">
-        <div className="col-span-7 place-self-center">
-          <h1 className="text-white mb-4 text-4xl lg:text-6xl font-extrabold">
-            Hello my name is reyy!
+        <div className="col-span-7 place-self-center text-center sm:text-left">
+          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
+              Hello I`m {""}{" "}
+            </span>
+            reyy!
           </h1>
-          <p className="text-[#ADB7BE] text-lg mb-6 lf:text-xl">lorem ipsum</p>
+          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lf:text-xl">
+            lorem ipsum
+          </p>
           <div>
-            <button className="px-6 py-3 rounded-full mr-4 bg-[#009] hover:bg-slate-950 text-black">
+            <button className="px-6 py-3 rounded-full w-full sm:w-fit mr-4 bg-gradient-to-br from-blue-500 via-blue-900 to-blue-950 hover:bg-slate-200 text-white">
               Hire me!
             </button>
-            <button className="px-6 py-3 rounded-full bg-transparent hover:bg-slate-900 text-black border border-[#150d5c] mt-3 ">
+            <button className="px-6 py-3 rounded-full w-full sm:w-fit bg-transparent hover:bg-slate-200 text-[#150d5c] border border-[#150d5c] mt-3 ">
               Download CV Here!
             </button>
           </div>
