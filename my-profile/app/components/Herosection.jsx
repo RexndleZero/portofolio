@@ -7,7 +7,7 @@ const Herosection = () => {
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <div className="col-span-7 place-self-center text-center sm:text-left">
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-blue-800 to-blue-950">
               Hello I`m {""}{" "}
             </span>
             reyy!
@@ -19,8 +19,8 @@ const Herosection = () => {
             <button className="px-6 py-3 rounded-full w-full sm:w-fit mr-4 bg-gradient-to-br from-blue-500 via-blue-900 to-blue-950 hover:bg-slate-200 text-white">
               Hire me!
             </button>
-            <button className="px-6 py-3 rounded-full w-full sm:w-fit bg-transparent hover:bg-slate-200 text-[#150d5c] border border-[#150d5c] mt-3 ">
-              Download CV Here!
+            <button className="px-1 py-1 rounded-full w-full sm:w-fit bg-gradient-to-br from-blue-500 via-blue-800 to-blue-950 hover:bg-slate-200 text-white border mt-3 ">
+             <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Download CV Here!</span>
             </button>
           </div>
         </div>
