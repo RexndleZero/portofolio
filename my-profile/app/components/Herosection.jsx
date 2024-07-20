@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import { TypeAnimation } from "react-type-animation";
 
 const Herosection = () => {
   return (
@@ -10,7 +12,21 @@ const Herosection = () => {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-blue-800 to-blue-950">
               Hello I`m {""}{" "}
             </span>
-            reyy!
+            <TypeAnimation
+              sequence={[
+                "Adit",
+                1000,
+                "a web developer",
+                1000,
+                "a handsome programmer",
+                1000,
+                "Backend developer",
+                1000,
+              ]}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+            />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lf:text-xl">
             lorem ipsum
@@ -20,7 +36,9 @@ const Herosection = () => {
               Hire me!
             </button>
             <button className="px-1 py-1 rounded-full w-full sm:w-fit bg-gradient-to-br from-blue-500 via-blue-800 to-blue-950 hover:bg-slate-200 text-white border mt-3 ">
-             <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Download CV Here!</span>
+              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                Download CV Here!
+              </span>
             </button>
           </div>
         </div>
